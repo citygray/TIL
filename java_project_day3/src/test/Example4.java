@@ -13,7 +13,7 @@ public class Example4 {
 		 * 출력값:6
 		 */
 
-		int num,sum = 0,resultNum = 0;
+		int num,sum = 0;
 		
 		Scanner input = new Scanner(System.in);
 		do {
@@ -21,13 +21,18 @@ public class Example4 {
 			num = input.nextInt();	
 		} while (!(100<=num && num < 1000));
 		
-		int divideNum = 100;
+		/*
+		 * 12345 % 10 -> 5
+		 * 1234 % 10 -> 4
+		 * 123 % 10 -> 3
+		 * 12 % 10 -> 2
+		 * */
+		
 		do {
-			resultNum = (num<10)?num:num/divideNum;	
-			sum += resultNum;
-			num = num%divideNum;
-			divideNum = divideNum/10;
-		} while(divideNum>0);
+			sum += num % 10;
+			num = num /10;
+		} while(num>10);
+
 		System.out.println(sum);
 	    
 		input.close();
