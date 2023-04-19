@@ -20,24 +20,24 @@ public class SwitchExample {
 		floor = input.nextInt();
 	
 		switch (floor) {
-		case 1:
-			store = "약국";
-			break;
-		case 2:
-			store = "정형외과";
-			break;
-		case 3:
-			store = "피부과";
-			break;
-		case 4:
-			store = "치과";
-			break;
-		default:
-			store = "없는 층";
-			break;
+			case 1:
+				store = "약국";
+				break;
+			case 2:
+				store = "정형외과";
+				break;
+			case 3:
+				store = "피부과";
+				break;
+			case 4:
+				store = "치과";
+				break;
+			default:
+				store = "없는 층";
 		}
 		System.out.printf("%d층는 %s입나다",floor,store);
 		
+		input.close();
 	}
 
 }
