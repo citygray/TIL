@@ -35,6 +35,7 @@ public class ConditionalOperationExample {
 		System.out.print((num1 > num2)? (num1 - num2) : (num2 - num1));
 		System.out.println("입니다.");
 		
+		input.close();
 		
 	}
 
