@@ -42,6 +42,8 @@ public class ifExample2 {
 			}
 			
 			System.out.println("학점은 "+ grade);
+			
+			
 		}
 		
 		input.close();
