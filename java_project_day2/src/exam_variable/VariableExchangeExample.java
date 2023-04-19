@@ -29,7 +29,7 @@ public class VariableExchangeExample {
 		System.out.println("b의 값은 "+ b);
 		System.out.println("temp "+temp);
 		
-		
+		input.close();
 
 		// 요구사항
 		//2개의 수 a, b를 읽어서 변수 a에 기억된 값을 1 증가시키고, 변수 b에 기억된 값은 1 감소시켜서 출력하는 프로그램을 작성하시오.
