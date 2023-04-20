@@ -69,12 +69,10 @@ public class ForOverlapExample {
 		 * 5 6 7 8 9 
 		 * */
 		
-		int j =1;
 		for(int i = 1;i<=5;i++) {
-			for(;j<=5+i;j++) {
+			for(int j = i;j<=4+i;j++) {
 				System.out.print(j+" ");
 			}
-			j++;
 			System.out.println();
 		}
 	}
