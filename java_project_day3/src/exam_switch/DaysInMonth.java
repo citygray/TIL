@@ -11,7 +11,7 @@ public class DaysInMonth {
 		 * 즉 특정 월을 입력받아 그 월의 일수를 출력한다.*/
 		
 		int month;
-		int year = 2023;
+		int year = 2000;
 		int days = 0;
 		
 		Scanner input = new Scanner(System.in);
@@ -27,9 +27,12 @@ public class DaysInMonth {
 					break;
 				case 2:
 					//윤년 계산
-					//4의 배수이고 100의 배수가 아니거나 400의 배수  == 윤년
-					
-					days = 28;
+					//년도가 4의 배수이고 100의 배수가 아니거나 400의 배수  == 윤년
+					if((year%4==0)&&(year%10!=0)||(year%400==0)) {
+						days= 29;
+					}else {
+						days = 28;
+					}
 					break;
 				default:
 					days = 30;
