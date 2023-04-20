@@ -81,6 +81,7 @@ public class GradesProgramming {
 		System.out.printf("학점:%c \n",grade);
 		System.out.println(str);
 		
+		input.close();
 		
 
 	}

@@ -31,6 +31,8 @@ public class SwitchToIf {
 			store = "없는 층";
 		}
 		System.out.printf("%d층는 %s입나다",floor,store);
+		
+		input.close();
 	}
 
 }

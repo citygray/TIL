@@ -36,7 +36,7 @@ public class OperationExample {
 		}while(ch != '+' || ch != '-'||ch != '*'||ch != '%');
 		
 		
-		
+		input.close();
 		
 	}
 

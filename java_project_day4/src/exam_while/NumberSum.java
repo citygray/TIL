@@ -24,6 +24,8 @@ public class NumberSum {
 		System.out.println("합계는 "+sum);
 		System.out.println("평균값는 "+sum/nums.length);
 		
+		input.close();
+		
 	}
 
 }
