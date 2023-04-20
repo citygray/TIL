@@ -1,4 +1,4 @@
-package src.exam_while;
+package exam_while;
 
 public class DoWhileExample2 {
 

@@ -1,10 +1,10 @@
-package src.exam_while;
+package exam_while;
 
 import java.util.Scanner;
 
-public class DoWhileExample {
+public class DoWhileExample1 {
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		/*do- while문을 아래 요구사항을..*/
 		/*
@@ -60,5 +60,4 @@ public class DoWhileExample {
 		input.close();
 	
 	}
-
 }
