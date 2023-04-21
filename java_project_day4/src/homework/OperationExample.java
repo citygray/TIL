@@ -28,12 +28,14 @@ public class OperationExample {
 		do {
 			System.out.println("한 문자를 입력하세요");
 			ch = input.next().charAt(0);
-			if(ch=='%'&&num1==0) {
+			if(ch=='/'&&num1==0) {
 				System.out.println("나누기의 분모는 0일 수 없습니다.");
 			}else {
 				
 			}
-		}while(ch != '+' || ch != '-'||ch != '*'||ch != '%');
+		}while(ch != '+' || ch != '-'||ch != '*'||ch != '/');
+		
+		
 		
 		
 		input.close();
