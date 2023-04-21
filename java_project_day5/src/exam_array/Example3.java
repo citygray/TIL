@@ -51,9 +51,12 @@ public class Example3 {
 	System.out.println("여러 수들을 입력해 주세요(공백기준): 1 5 4 6 8 1 3 9 4 10 6 9 8 1 3");
 	String str = input.nextLine();
 	String[] strArray = str.split(" ");
+	input.close();
 	
 	System.out.println(Arrays.toString(strArray));
-	
+
+	//숫자당 바로 출력
+	/*
 	for(int i=1;i<=10;i++) {
 		int count = 0;
 		for(String strVaule: strArray) {
@@ -61,6 +64,16 @@ public class Example3 {
 		}
 		System.out.printf("%d의 개수 : %d\n",i,count);
 	}
-	input.close();
+	*/
+	
+	//숫자당 카운트를 배열에 저장해서 출력하는 방법
+	int[] numbers = new int[10];
+	System.out.println("여러 수들을 입력해 주세요(공백기준): 1 5 4 6 8 1 3 9 4 10 6 9 8 1 3");
+	String strValue = input.nextLine();
+	
+	String[] strValueArray = strValue.split(" ");
+	for(int i = 0; i<strValueArray.length;i++) {
+		numbers[Integer.parseInt(strValueArray[i])-1]
+	}
 	}
 }
