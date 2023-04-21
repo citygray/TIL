@@ -25,6 +25,7 @@ public class OperationExample {
 		
 		char ch;
 		int result = 0;
+				
 		do {
 			System.out.println("한 문자를 입력하세요");
 			ch = input.next().charAt(0);
@@ -33,10 +34,25 @@ public class OperationExample {
 			}else {
 				
 			}
-		}while(ch != '+' || ch != '-'||ch != '*'||ch != '/');
+		}while(!(ch == '+' ||ch == '-'||ch == '*'||ch == '/'));
+		
+		switch(ch) {
+			case '+':
+				result = num1 + num2;
+				break;
+			case '-':
+				result = num1 - num2;	
+				break;
+			case '*':
+				result = num1 * num2;
+				break;
+			case '/':
+				result = num1 / num2;
+				break;
+		}
 		
 		
-		
+		System.out.printf("%d%c%d = %d",num1,ch,num2,result);
 		
 		input.close();
 		
